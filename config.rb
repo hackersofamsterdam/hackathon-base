@@ -1,11 +1,10 @@
 require 'bootstrap-sass'
-require './app'
 
-project_path = Sinatra::Application.root
+project_path = File.expand_path File.dirname(__FILE__)
 
 http_path = '/'
 http_stylesheets_path = '/css'
-http_images_path  = '/img'
+http_images_path = '/img'
 http_javascripts_path = '/js'
 
 css_dir = File.join 'public', 'css'
